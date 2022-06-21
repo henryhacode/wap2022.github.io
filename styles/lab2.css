@@ -1,0 +1,59 @@
+body {
+    margin-left: 50px;
+    align-content: center;
+}
+
+h1 {
+    color:rgb(52, 65, 248);
+}
+
+div span {
+    color: rgb(214, 98, 3);
+}
+
+.brief {
+    font-size: 2em;
+}
+
+.film {
+    margin-left: 40px;
+    transform: rotate(180deg);
+}
+
+.film > li {
+    transform: rotate(-180deg);
+}
+
+.title {
+    color:rgb(243, 144, 14);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.desc {
+    margin-left: 30px;
+}
+
+.card {
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 8px 8px 0px gray;
+    margin-bottom: 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.maintext {
+    font-size: 2em;
+    color:rgb(52, 65, 248);
+}
+
+.footer {
+    color:brown;
+}
