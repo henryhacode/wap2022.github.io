@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="encoding" content="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Thiep Ha" />
+    <title>Html Form</title>
+    <link
+      href="public/resources/images/favicon.png"
+      type="image/png"
+      rel="shortcut icon"
+    />
+    <link href="styles/lab4.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="container">
+      <form action="#">
+        <div id="header">
+          <span>Workshop Registration</span>
+          <select name="action" >
+            <option>More Actions</option>
+            <option value="action1">Action 1</option>
+            <option value="action2">Action 2</option>
+            <option value="action3">Action 3</option>
+          </select>
+          <div></div>
+        </div>
+        <div class="mainLabel">Register now while seats are available</div>
+        <div id="content">
+          <div id="leftContent">
+            <div>
+              <span>First Name <span class="requiredText">*</span></span>
+              <input type="text" name="firstname" pattern=".+" required />
+            </div>
+            <div>
+              <span>Last Name <span class="requiredText">*</span></span>
+              <input type="text" name="lastname" pattern=".+" required />
+            </div>
+            <div>
+              <span
+                >Company/Institution <span class="requiredText">*</span></span
+              >
+              <input type="text" name="company" pattern=".+" required />
+            </div>
+            <div>
+              <span>Address <span class="requiredText">*</span></span>
+              <textarea name="address" required></textarea>
+            </div>
+            <div>
+              <span>City</span>
+              <input type="text" name="city" />
+            </div>
+            <div>
+              <span>State</span>
+              <select name="state">
+                <option>-Select-</option>
+                <option value="iowa">Iowa</option>
+                <option value="texas">Texas</option>
+                <option value="california">California</option>
+                <option value="ohio">Ohio</option>
+                <option value="maryland">Maryland</option>
+              </select>
+            </div>
+            <div>
+              <span>Country</span>
+              <select name="country">
+                <option>-Select-</option>
+                <option value="usa">USA</option>
+                <option value="china">China</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="korea">Korea</option>
+                <option value="singapore">Singapore</option>
+              </select>
+            </div>
+            <div>
+              <span>Email <span class="requiredText">*</span></span>
+              <input
+                type="text"
+                name="email"
+                pattern="[a-z0-9._+\-]+@[a-z0-9.\-]+\.[a-z]{2,3}"
+                required
+              />
+            </div>
+            <div>
+              <span>Phone Number <span class="requiredText">*</span></span>
+              <input
+                type="text"
+                name="phone"
+                pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+                required
+              />
+            </div>
+          </div>
+          <div id="rightContent">
+            <div class="mainLabel">Lunch</div>
+            <div>
+              <span>Meal Preference</span>
+              <select name="meal">
+                <option value="vegetarian" selected>Vegetarian</option>
+                <option value="western">Western</option>
+                <option value="asian">Asian</option>
+              </select>
+            </div>
+            <div class="mainLabel">Payment Details</div>
+            <div>
+              <span>Payment Mode</span>
+              <div id="paymentMode">
+                <div class="checkItem">
+                  <label for="cashChbx"
+                    ><input
+                      type="checkbox"
+                      name="payment"
+                      value="cash"
+                      id="cashChbx"
+                      checked
+                    />Cash</label
+                  >
+                </div>
+                <div class="checkItem">
+                  <label for="chequeChbx"
+                    ><input
+                      type="checkbox"
+                      id="chequeChbx"
+                      name="payment"
+                      value="cheque"
+                    />Cheque</label
+                  >
+                </div>
+                <div class="checkItem">
+                  <label for="draftChbx"
+                    ><input
+                      type="checkbox"
+                      id="draftChbx"
+                      name="payment"
+                      value="draft"
+                    />Demand Draft</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <span>DD/Cheque No.</span>
+              <input type="text" name="chequeNo" />
+            </div>
+            <div>
+              <span>Drawn On (Bank Name)</span>
+              <input type="text" name="bank" />
+            </div>
+            <div>
+              <span>Payable at</span>
+              <input type="text" name="payable" />
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <button class="submit" type="submit">Submit</button>
+          <button class="submit" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <a
+      href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhenryhacode.github.io%2Fwap2022.github.io%2Flab4.html"
+    >
+      <img src="public/resources/images/htmlChecker.png" alt="Hmtl Validator"
+    /></a>
+
+    <a
+      href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhenryhacode.github.io%2Fwap2022.github.io%2Flab4.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+    >
+      <img src="public/resources/images/cssChecker.png" alt="CSS Validator"
+    /></a>
+  </body>
+</html>
